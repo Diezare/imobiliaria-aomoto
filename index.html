@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon/aomoto-favicon.png" />
+<title>Aomoto Imóveis — Encontre o imóvel que combina com a sua vida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="topo">
+	<div class="container nav-inner">
+		<a href="index.html" class="logo">
+			<img class="brand-logo" src="img/logo/aomoto-logo-completa.png" alt="Aomoto Imóveis · CRECI J-5624">
+		</a>
+		<nav class="nav-links">
+			<a href="#imoveis">Imóveis</a>
+			<a href="#match">Match por rotina</a>
+			<a href="#bairros">Bairros</a>
+			<a href="#contato">Contato</a>
+		</nav>
+		<a href="#contato" class="btn-navbar">
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+			Falar com corretor
+		</a>
+	</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+	<div class="hero-overlay"></div>
+	<div class="container hero-content">
+		<h1>Encontre o imóvel que<br>combina com a sua vida.</h1>
+		<p>Casas, apartamentos, terrenos e chácaras selecionados em Apucarana e região.</p>
+
+		<form class="search-bar" onsubmit="event.preventDefault();">
+		<div class="search-tabs">
+			<button type="button" class="tab active">Comprar</button>
+			<button type="button" class="tab">Alugar</button>
+		</div>
+		<div class="search-fields">
+
+		<div class="field" data-dropdown>
+		<span class="field-label">Tipo de imóvel</span>
+		<button type="button" class="field-trigger">
+			<span class="field-value">Todos os tipos</span>
+			<svg class="field-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+		</button>
+		<ul class="field-menu">
+			<li data-value="Todos os tipos" class="selected">Todos os tipos</li>
+			<li data-value="Casa">Casa</li>
+			<li data-value="Apartamento">Apartamento</li>
+			<li data-value="Sobrado">Sobrado</li>
+			<li data-value="Chácara">Chácara</li>
+			<li data-value="Terreno">Terreno</li>
+		</ul>
+		</div>
+
+		<div class="field" data-dropdown>
+		<span class="field-label">Bairro</span>
+		<button type="button" class="field-trigger">
+			<span class="field-value">Todos os bairros</span>
+			<svg class="field-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+		</button>
+		<ul class="field-menu">
+			<li data-value="Todos os bairros" class="selected">Todos os bairros</li>
+			<li data-value="Centro">Centro</li>
+			<li data-value="Jardim América">Jardim América</li>
+			<li data-value="Vila Nova">Vila Nova</li>
+			<li data-value="Jardim Colonial">Jardim Colonial</li>
+			<li data-value="Parque Bela Vista">Parque Bela Vista</li>
+			<li data-value="Região do Pirapó">Região do Pirapó</li>
+		</ul>
+		</div>
+
+		<div class="field" data-dropdown>
+		<span class="field-label">Quartos</span>
+		<button type="button" class="field-trigger">
+			<span class="field-value">Qualquer</span>
+			<svg class="field-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+		</button>
+		<ul class="field-menu">
+			<li data-value="Qualquer" class="selected">Qualquer</li>
+			<li data-value="1+">1+</li>
+			<li data-value="2+">2+</li>
+			<li data-value="3+">3+</li>
+			<li data-value="4+">4+</li>
+		</ul>
+		</div>
+
+		<div class="field" data-dropdown>
+		<span class="field-label">Valor</span>
+		<button type="button" class="field-trigger">
+			<span class="field-value">Qualquer valor</span>
+			<svg class="field-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+		</button>
+		<ul class="field-menu">
+			<li data-value="Qualquer valor" class="selected">Qualquer valor</li>
+			<li data-value="Até R$ 300 mil">Até R$ 300 mil</li>
+			<li data-value="R$ 300 – 700 mil">R$ 300 – 700 mil</li>
+			<li data-value="Acima de R$ 700 mil">Acima de R$ 700 mil</li>
+		</ul>
+		</div>
+
+		<button type="submit" class="btn btn-primary btn-search">
+		<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+		Buscar
+		</button>
+
+	</div>
+		</form>
+
+		<a href="#match" class="hero-link">
+		<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3Z"/><path d="M5 3v4"/><path d="M7 5H3"/><path d="M19 17v4"/><path d="M21 19h-4"/></svg>
+		<strong>Novo:</strong>&nbsp;encontre imóveis pela sua rotina
+		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+		</a>
+	</div>
+</section>
+
+<!-- IMÓVEIS -->
+<section class="section" id="imoveis">
+	<div class="container">
+		<div class="listings-heading">
+			<div class="listings-heading-copy">
+				<h2 class="section-title">Imóveis disponíveis<br><span id="listing-city-title">em Apucarana</span></h2>
+				<p class="section-sub">Casas, apartamentos, terrenos e chácaras para morar ou investir.</p>
+			</div>
+			<div class="city-dropdown sort-dropdown" id="city-filter" data-dropdown>
+				<span class="city-filter-label">Selecione a cidade</span>
+				<button type="button" class="city-trigger sort-trigger field-trigger" aria-label="Filtrar imóveis por cidade" aria-haspopup="listbox">
+					<span class="field-value">Apucarana</span>
+					<svg class="field-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+				</button>
+				<ul class="field-menu" role="listbox" aria-label="Cidades com imóveis">
+					<li data-value="all">Todas as cidades</li>
+					<li data-value="Apucarana" class="selected" role="option" aria-selected="true">Apucarana</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="filters">
+		  <div class="filter-tabs">
+			<button class="chip active">Todos</button>
+			<button class="chip">Comprar</button>
+			<button class="chip">Alugar</button>
+		  </div>
+
+		  <div class="filter-info">
+					<span id="property-count" aria-live="polite">6 imóveis encontrados</span>
+
+			<div class="sort-dropdown" data-dropdown>
+			  <button type="button" class="sort-trigger field-trigger">
+				<span class="sort-label">Ordenar:</span>
+				<span class="field-value">Relevância</span>
+				<svg class="field-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+			  </button>
+			  <ul class="field-menu">
+				<li data-value="Relevância" class="selected">Relevância</li>
+				<li data-value="Menor preço">Menor preço</li>
+				<li data-value="Maior preço">Maior preço</li>
+				<li data-value="Mais recentes">Mais recentes</li>
+				<li data-value="Maior área">Maior área</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		<div class="properties-grid">
+
+		<!-- CARD 1 -->
+		<article class="property-card" data-city="Apucarana">
+			<a href="imovel.html" class="property-image">
+				<img src="img/imoveis/casa-terrea.png" alt="Casa térrea com jardim e edícula">
+				<div class="badges">
+				<span class="badge badge-new">Novo</span>
+				<span class="badge badge-dark">Destaque</span>
+				</div>
+				<button class="fav" onclick="event.preventDefault(); this.classList.toggle('active')">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+				</button>
+				<span class="code">Cód: AO-102</span>
+			</a>
+			<div class="property-body">
+				<span class="tag-type">Casa térrea</span>
+				<h3>Casa térrea com jardim e edícula</h3>
+				<p class="address">
+				<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Jardim América, Apucarana - PR
+				</p>
+
+				<div class="features-modern">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Quartos · 2 suítes</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Banheiros</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>2</strong>
+							<span>Vagas</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>180 m²</strong>
+							<span>Área útil</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="extra-tags">
+				<span>Edícula</span><span>Churrasqueira</span><span>Jardim</span>
+				</div>
+				<div class="extra-info">Aceita financiamento</div>
+				<div class="price-row">
+				<div><span class="price-label">Venda</span><span class="price">R$ 685.000</span></div>
+				</div>
+				<div class="actions">
+				<button class="btn btn-primary btn-sm">Agendar visita</button>
+				<button class="btn-icon" title="Conversar no WhatsApp">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+				</button>
+				</div>
+			</div>
+		</article>
+
+		<!-- CARD 2 -->
+		<article class="property-card" data-city="Apucarana">
+			<a href="imovel.html" class="property-image">
+				<img src="img/imoveis/apartamento.png" alt="Apartamento a duas quadras do Calçadão">
+				<div class="badges"><span class="badge badge-new">Novo</span></div>
+				<button class="fav" onclick="event.preventDefault(); this.classList.toggle('active')">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+				</button>
+				<span class="code">Cód: AO-103</span>
+			</a>
+			<div class="property-body">
+				<span class="tag-type">Apartamento</span>
+				<h3>Apartamento a duas quadras do Calçadão</h3>
+				<p class="address">
+				<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Centro, Apucarana - PR
+				</p>
+
+				<div class="features-modern">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>2</strong>
+							<span>Quartos · 1 suíte</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>2</strong>
+							<span>Banheiros</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>1</strong>
+							<span>Vaga</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>78 m²</strong>
+							<span>Área útil</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="extra-tags">
+				<span>Sacada</span><span>Elevador</span><span>Portaria 24h</span>
+				</div>
+				<div class="extra-info">Condomínio: R$ 480/mês</div>
+				<div class="price-row">
+				<div><span class="price-label">Aluguel</span><span class="price">R$ 2.300<small>/mês</small></span></div>
+				</div>
+				<div class="actions">
+				<button class="btn btn-primary btn-sm">Agendar visita</button>
+				<button class="btn-icon" title="Conversar no WhatsApp">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+				</button>
+				</div>
+			</div>
+		</article>
+
+		<!-- CARD 3 -->
+		<article class="property-card" data-city="Apucarana">
+			<a href="imovel.html" class="property-image">
+				<img src="img/imoveis/sobrado.png" alt="Sobrado em condomínio fechado">
+				<div class="badges">
+				<span class="badge badge-new">Novo</span>
+				<span class="badge badge-dark">Exclusivo</span>
+				</div>
+				<button class="fav" onclick="event.preventDefault(); this.classList.toggle('active')">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+				</button>
+				<span class="code">Cód: AO-104</span>
+			</a>
+			<div class="property-body">
+				<span class="tag-type">Sobrado</span>
+				<h3>Sobrado em condomínio fechado</h3>
+				<p class="address">
+				<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Jardim Colonial, Apucarana - PR
+				</p>
+
+				<div class="features-modern">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>4</strong>
+							<span>Quartos · 2 suítes</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Banheiros</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Vagas</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>240 m²</strong>
+							<span>Área útil</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="extra-tags">
+				<span>Condomínio fechado</span><span>Piscina</span><span>Área gourmet</span>
+				</div>
+				<div class="extra-info">Aceita financiamento</div>
+				<div class="price-row">
+				<div><span class="price-label">Venda</span><span class="price">R$ 790.000</span></div>
+				</div>
+				<div class="actions">
+				<button class="btn btn-primary btn-sm">Agendar visita</button>
+				<button class="btn-icon" title="Conversar no WhatsApp">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+				</button>
+				</div>
+			</div>
+		</article>
+
+		<!-- CARD 4 -->
+		<article class="property-card" data-city="Apucarana">
+			<a href="imovel.html" class="property-image">
+				<img src="img/imoveis/chacara.png" alt="Chácara com piscina e pomar">
+				<div class="badges"><span class="badge badge-new">Novo</span></div>
+				<button class="fav" onclick="event.preventDefault(); this.classList.toggle('active')">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+				</button>
+				<span class="code">Cód: AO-105</span>
+			</a>
+			<div class="property-body">
+				<span class="tag-type">Chácara</span>
+				<h3>Chácara com piscina e pomar</h3>
+				<p class="address">
+				<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Região do Pirapó, Apucarana - PR
+				</p>
+
+				<div class="features-modern">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Quartos · 2 suítes</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Banheiros</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>2</strong>
+							<span>Vagas</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>250 m²</strong>
+							<span>Área útil</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="extra-tags">
+				<span>Piscina</span><span>Pomar</span><span>Poço artesiano</span>
+				</div>
+				<div class="extra-info">Aceita financiamento</div>
+				<div class="price-row">
+				<div><span class="price-label">Venda</span><span class="price">R$ 1.150.000</span></div>
+				</div>
+				<div class="actions">
+				<button class="btn btn-primary btn-sm">Agendar visita</button>
+				<button class="btn-icon" title="Conversar no WhatsApp">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+				</button>
+				</div>
+			</div>
+		</article>
+
+		<!-- CARD 5 -->
+		<article class="property-card" data-city="Apucarana">
+			<a href="imovel.html" class="property-image">
+				<img src="img/imoveis/cobertura.png" alt="Cobertura com terraço gourmet">
+				<div class="badges"><span class="badge badge-new">Novo</span></div>
+				<button class="fav" onclick="event.preventDefault(); this.classList.toggle('active')">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+				</button>
+				<span class="code">Cód: AO-106</span>
+			</a>
+			<div class="property-body">
+				<span class="tag-type">Cobertura</span>
+				<h3>Cobertura com terraço gourmet</h3>
+				<p class="address">
+				<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Vila Nova, Apucarana - PR
+				</p>
+
+				<div class="features-modern">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>3</strong>
+							<span>Quartos · 3 suítes</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>4</strong>
+							<span>Banheiros</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>2</strong>
+							<span>Vagas</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>210 m²</strong>
+							<span>Área útil</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="extra-tags">
+				<span>Terraço gourmet</span><span>Jacuzzi</span><span>Vista cidade</span>
+				</div>
+				<div class="extra-info">Condomínio: R$ 620/mês</div>
+				<div class="price-row">
+				<div><span class="price-label">Aluguel</span><span class="price">R$ 4.800<small>/mês</small></span></div>
+				</div>
+				<div class="actions">
+				<button class="btn btn-primary btn-sm">Agendar visita</button>
+				<button class="btn-icon" title="Conversar no WhatsApp">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+				</button>
+				</div>
+			</div>
+		</article>
+
+		<!-- CARD 6 -->
+		<article class="property-card" data-city="Apucarana">
+			<a href="imovel.html" class="property-image">
+				<img src="img/imoveis/terreno.png" alt="Terreno plano pronto para construir">
+				<div class="badges"><span class="badge badge-new">Novo</span></div>
+				<button class="fav" onclick="event.preventDefault(); this.classList.toggle('active')">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+				</button>
+				<span class="code">Cód: AO-107</span>
+			</a>
+			<div class="property-body">
+				<span class="tag-type">Terreno</span>
+				<h3>Terreno plano pronto para construir</h3>
+				<p class="address">
+				<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+				Parque Bela Vista, Apucarana - PR
+				</p>
+
+				<div class="features-modern">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>360 m²</strong>
+							<span>Área total</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>12 m</strong>
+							<span>Frente</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>30 m</strong>
+							<span>Fundo</span>
+						</div>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18 8.36 4.18a1 1 0 0 1 0 1.79l-8.36 4.18a2 2 0 0 1-1.66 0L2.81 8.15a1 1 0 0 1 0-1.79l8.36-4.18a2 2 0 0 1 1.66 0Z"/><path d="m22 12.5-9.17 4.58a2 2 0 0 1-1.66 0L2 12.5"/><path d="m22 17.5-9.17 4.58a2 2 0 0 1-1.66 0L2 17.5"/></svg>
+						</div>
+						<div class="feature-text">
+							<strong>Plano</strong>
+							<span>Terreno</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="extra-tags">
+				<span>Plano</span><span>Esquina</span><span>Infraestrutura</span>
+				</div>
+				<div class="extra-info">Aceita financiamento</div>
+				<div class="price-row">
+				<div><span class="price-label">Venda</span><span class="price">R$ 189.000</span></div>
+				</div>
+				<div class="actions">
+				<button class="btn btn-primary btn-sm">Agendar visita</button>
+				<button class="btn-icon" title="Conversar no WhatsApp">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+				</button>
+				</div>
+			</div>
+		</article>
+
+		</div>
+	</div>
+</section>
+
+<!-- MATCH POR ROTINA -->
+<section class="section section-dark" id="match">
+	<div class="container">
+		<div class="match-intro">
+			<h2 class="section-title section-title-light">Encontre o imóvel ideal para sua rotina</h2>
+			<p class="section-sub section-sub-light" id="match-city-subtitle">Escolha os lugares importantes para você e veja imóveis que combinam com sua rotina em Apucarana.</p>
+		</div>
+		<div class="match-layout">
+
+			<!-- COLUNA ESQUERDA -->
+			<div class="match-left">
+				<p class="match-city-empty" id="match-city-empty" hidden>Selecione Apucarana ou Londrina no filtro de cidade para carregar referências locais e comparar os imóveis com sua rotina.</p>
+				<div class="match-form-card" id="match-form-card">
+					<div class="match-form">
+
+						<!-- 1 -->
+						<div class="match-group">
+							<h3 class="match-question"><span class="match-num">1.</span> Onde sua rotina acontece?</h3>
+							<div class="pills">
+								<button type="button" class="pill active" data-match-location="0">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 18V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9"/><path d="M10 21v-4h4v4"/><path d="M10 11h.01M14 11h.01M10 14h.01M14 14h.01"/></svg>
+								<span class="pill-label">Centro / Calçadão</span>
+								</button>
+								<button type="button" class="pill" data-match-location="1">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V5l6-3 6 3v16"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></svg>
+									<span class="pill-label">Escola dos filhos</span>
+								</button>
+								<button type="button" class="pill" data-match-location="2">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 10-10-5-10 5 10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+									<span class="pill-label">UTFPR</span>
+								</button>
+								<button type="button" class="pill" data-match-location="3">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M10 8h4M12 6v4"/><path d="M10 14h.01M14 14h.01M10 17h.01M14 17h.01"/></svg>
+									<span class="pill-label">Hospital da Providência</span>
+								</button>
+								<button type="button" class="pill" data-match-location="4">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>
+									<span class="pill-label">Parque Industrial</span>
+								</button>
+								<button type="button" class="pill" data-match-location="5">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M7 15a4 4 0 0 1-.8-7.9A5 5 0 0 1 16 6a4.5 4.5 0 0 1 .8 9H7Z"/></svg>
+									<span class="pill-label">Parque Jaboti</span>
+								</button>
+							</div>
+						</div>
+
+						<!-- 2 -->
+						<div class="match-group">
+							<h3 class="match-question"><span class="match-num">2.</span> Como você se desloca?</h3>
+							<div class="pills-tiles">
+								<button class="pill pill-tile active">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+									<span>Carro</span>
+								</button>
+								<button class="pill pill-tile">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+									<span>Bike</span>
+								</button>
+								<button class="pill pill-tile">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="4" r="2"/><path d="m11 8-3 4 3 3 1 6M11 8l4 2 2 4 3 1M11 15l-4 6"/></svg>
+									<span>A pé</span>
+								</button>
+							</div>
+						</div>
+
+						<!-- 3 -->
+						<div class="match-group">
+							<h3 class="match-question"><span class="match-num">3.</span> O que não pode faltar?</h3>
+							<div class="pills">
+								<button class="pill">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+									Rua tranquila
+								</button>
+								<button class="pill">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+									Espaço para pet
+								</button>
+								<button class="pill">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+									Área de lazer
+								</button>
+								<button class="pill">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></svg>
+									Faço tudo a pé
+								</button>
+								<button class="pill">
+									<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+									Muito espaço
+								</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- COLUNA DIREITA -->
+			<div class="match-right">
+				<p class="match-hint">Tempos estimados com base em trajetos reais pelo Google Maps. Protótipo — valores ilustrativos.</p>
+
+				<!-- CARD 1 -->
+				<article class="match-card-new" data-city="Apucarana">
+					<div class="match-image">
+						<img src="img/imoveis/casa-terrea.png" alt="">
+						<span class="match-badge">Melhor match</span>
+					</div>
+					<div class="match-body">
+						<span class="match-rank">1º · Jardim América</span>
+						<h4>Casa térrea com jardim e edícula</h4>
+						<p class="match-price">R$ 685.000</p>
+						<div class="match-tags-pills">
+							<span>≈ 5 min até sua rotina</span>
+							<span>7h/mês em trajetos</span>
+							<span>Espaço para pet</span>
+						</div>
+					</div>
+					<div class="match-score-ring">
+						<svg viewBox="0 0 44 44">
+							<circle cx="22" cy="22" r="20" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+							<circle cx="22" cy="22" r="20" fill="none" stroke="#0f1e3d" stroke-width="3"
+								stroke-dasharray="125.6" stroke-dashoffset="8.8"
+								transform="rotate(-90 22 22)" stroke-linecap="round"/>
+						</svg>
+						<strong>93%</strong>
+					</div>
+				</article>
+
+				<!-- CARD 2 -->
+				<article class="match-card-new" data-city="Apucarana">
+					<div class="match-image">
+						<img src="img/imoveis/sobrado.png" alt="">
+					</div>
+					<div class="match-body">
+						<span class="match-rank">2º · Jardim Colonial</span>
+						<h4>Sobrado em condomínio fechado</h4>
+						<p class="match-price">R$ 790.000</p>
+						<div class="match-tags-pills">
+							<span>≈ 7 min até sua rotina</span>
+							<span>10h/mês em trajetos</span>
+							<span>Espaço para pet</span>
+						</div>
+					</div>
+					<div class="match-score-ring">
+						<svg viewBox="0 0 44 44">
+							<circle cx="22" cy="22" r="20" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+							<circle cx="22" cy="22" r="20" fill="none" stroke="#0f1e3d" stroke-width="3"
+								stroke-dasharray="125.6" stroke-dashoffset="12.6"
+								transform="rotate(-90 22 22)" stroke-linecap="round"/>
+						</svg>
+						<strong>90%</strong>
+					</div>
+				</article>
+
+				<!-- CARD 3 -->
+				<article class="match-card-new" data-city="Apucarana">
+					<div class="match-image">
+						<img src="img/imoveis/chacara.png" alt="">
+					</div>
+					<div class="match-body">
+						<span class="match-rank">3º · Região do Pirapó</span>
+						<h4>Chácara com piscina e pomar</h4>
+						<p class="match-price">R$ 1.150.000</p>
+						<div class="match-tags-pills">
+							<span>≈ 21 min até sua rotina</span>
+							<span>30h/mês em trajetos</span>
+							<span>Espaço para pet</span>
+						</div>
+					</div>
+					<div class="match-score-ring">
+						<svg viewBox="0 0 44 44">
+							<circle cx="22" cy="22" r="20" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+							<circle cx="22" cy="22" r="20" fill="none" stroke="#0f1e3d" stroke-width="3"
+								stroke-dasharray="125.6" stroke-dashoffset="37.7"
+								transform="rotate(-90 22 22)" stroke-linecap="round"/>
+						</svg>
+						<strong>70%</strong>
+					</div>
+				</article>
+				<p class="match-results-empty" id="match-results-empty" hidden></p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- BAIRROS -->
+<section class="section section-alt" id="bairros">
+	<div class="container">
+		<div class="bairros-heading">
+			<h2 class="section-title"><span id="neighborhood-city-title">Apucarana</span>, bairro a bairro,<br>por quem vive aqui.</h2>
+			<p class="section-sub">Cada região tem um ritmo. Conheça o dia a dia de cada bairro.</p>
+		</div>
+
+		<div class="bairros-grid">
+		<article class="bairro-card" data-city="Apucarana">
+			<div class="bairro-head"><span>01</span><span class="bairro-tag">Tudo a pé</span></div>
+			<h4>Centro <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Calçadão, Catedral, bancos e serviços na porta. Ideal para quem quer praticidade.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Apucarana">
+			<div class="bairro-head"><span>02</span><span class="bairro-tag">Famílias</span></div>
+			<h4>Jardim América <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Ruas arborizadas, escolas próximas e casas com quintal a poucos minutos do Centro.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Apucarana">
+			<div class="bairro-head"><span>03</span><span class="bairro-tag">Verticalizado</span></div>
+			<h4>Vila Nova <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Apartamentos e coberturas modernas com vista para a Cidade Alta.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Apucarana">
+			<div class="bairro-head"><span>04</span><span class="bairro-tag">Condomínios</span></div>
+			<h4>Jardim Colonial <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Segurança, áreas de lazer completas e acesso rápido à UTFPR.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Apucarana">
+			<div class="bairro-head"><span>05</span><span class="bairro-tag">Para construir</span></div>
+			<h4>Parque Bela Vista <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Loteamentos planos e bem localizados para quem quer a casa do seu jeito.</p>
+		</article>
+
+		<article class="bairro-card bairro-card-more" data-city="Apucarana">
+			<div class="bairro-head"><span>06</span><span class="bairro-tag">Mais bairros</span></div>
+			<h4>Veja mais <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Explore outras regiões e descubra qual combina com sua rotina.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Londrina" hidden>
+			<div class="bairro-head"><span>01</span><span class="bairro-tag">Região central</span></div>
+			<h4>Centro <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Explore imóveis e conheça os pontos de referência desta região.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Londrina" hidden>
+			<div class="bairro-head"><span>02</span><span class="bairro-tag">Residencial</span></div>
+			<h4>Higienópolis <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Veja opções de imóveis e descubra o perfil da região.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Londrina" hidden>
+			<div class="bairro-head"><span>03</span><span class="bairro-tag">Conheça a região</span></div>
+			<h4>Ipiranga <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Conheça os imóveis disponíveis e os detalhes desta região.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Londrina" hidden>
+			<div class="bairro-head"><span>04</span><span class="bairro-tag">Residencial</span></div>
+			<h4>Petrópolis <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Explore as opções de moradia e os pontos de interesse locais.</p>
+		</article>
+
+		<article class="bairro-card" data-city="Londrina" hidden>
+			<div class="bairro-head"><span>05</span><span class="bairro-tag">Conheça a região</span></div>
+			<h4>Vila Brasil <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Veja imóveis e descubra os detalhes desta região de Londrina.</p>
+		</article>
+
+		<article class="bairro-card bairro-card-more" data-city="Londrina" hidden>
+			<div class="bairro-head"><span>06</span><span class="bairro-tag">Mais bairros</span></div>
+			<h4>Veja mais <span class="bairro-arrow" aria-hidden="true">↗</span></h4>
+			<p>Explore outros bairros de Londrina.</p>
+		</article>
+		</div>
+	</div>
+</section>
+
+<!-- FEITO AOMOTO -->
+<section class="section" id="sobre">
+	<div class="container">
+		<div class="feito-layout">
+			<div class="feito-intro">
+				<h2 class="section-title">Uma imobiliária<br>de família, com<br>cuidado de artesão.</h2>
+				<p class="section-sub">Nosso nome carrega raízes e cuidado com os detalhes. É assim que atendemos quem compra, vende ou aluga em Apucarana.</p>
+			</div>
+			<div class="feito-steps">
+				<div class="step">
+					<div class="step-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5 8.5 5l7 2.5L21 5v11.5L15.5 19l-7-2.5L3 19V7.5Z"/><path d="M8.5 5v11.5M15.5 7.5V19"/><path d="M12 13s3-2.7 3-5a3 3 0 1 0-6 0c0 2.3 3 5 3 5Z"/><circle cx="12" cy="8" r="1"/></svg>
+					</div>
+					<div class="step-content">
+						<span class="step-label">Etapa 1</span>
+						<h4>Entendemos sua rotina</h4>
+						<p>Antes de mostrar imóveis, mapeamos seus trajetos, horários e o que é essencial para a sua família.</p>
+					</div>
+				</div>
+				<div class="step">
+					<div class="step-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-7"/><path d="M13 3v5h5M8 12h5M8 16h3"/><path d="m16 5 2 2 4-4"/></svg>
+					</div>
+					<div class="step-content">
+						<span class="step-label">Etapa 2</span>
+						<h4>Visitas com dossiê</h4>
+						<p>Cada visita vem com orientação solar, tempos de deslocamento e situação documental já verificada.</p>
+					</div>
+				</div>
+				<div class="step">
+					<div class="step-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="5"/><path d="m11.5 11.5 8-8 2 2-2 2 1.5 1.5-2 2L17.5 9.5l-2.5 2.5"/><circle cx="8" cy="15" r="1"/></svg>
+					</div>
+					<div class="step-content">
+						<span class="step-label">Etapa 3</span>
+						<h4>Chave na mão, sem susto</h4>
+						<p>Acompanhamos financiamento, cartório e vistoria até a entrega das chaves.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CONTATO -->
+<section class="section section-contato" id="contato">
+	<div class="container">
+		<div class="contato-card">
+
+			<!-- COLUNA ESQUERDA -->
+			<div class="contato-left">
+				<div class="contato-head">
+					<h2 class="contato-title">Vamos encontrar o seu lugar em Apucarana?</h2>
+					<p class="contato-sub">Fale direto com corretor pelo WhatsApp. Respondemos rápido, inclusive aos finais de semana.</p>
+				</div>
+
+				<div class="contato-info">
+					<p>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+						(43) 99999–9999
+					</p>
+					<p>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						Centro, Apucarana — PR
+					</p>
+				</div>
+			</div>
+
+			<!-- COLUNA DIREITA — FORMULÁRIO -->
+			<form class="contato-form" onsubmit="event.preventDefault(); alert('Obrigado! Entraremos em contato.');">
+				<label>
+					<span>Seu nome</span>
+					<input type="text" placeholder="Como podemos te chamar?" required>
+				</label>
+
+				<div class="form-group">
+					<span class="form-label">Tenho interesse em</span>
+					<div class="form-pills">
+						<button type="button" class="pill-light active">Comprar</button>
+						<button type="button" class="pill-light">Alugar</button>
+						<button type="button" class="pill-light">Vender meu imóvel</button>
+						<button type="button" class="pill-light">Avaliar meu imóvel</button>
+					</div>
+				</div>
+
+				<label>
+					<span>Conte um pouco mais (opcional)</span>
+					<textarea placeholder="Ex.: casa com 3 quartos perto da escola dos meus filhos"></textarea>
+				</label>
+
+				<button type="submit" class="btn-whatsapp">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+					Enviar pelo WhatsApp
+				</button>
+			</form>
+
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="footer-brand">
+				<a href="#topo" class="logo footer-logo">
+					<img class="brand-logo" src="img/logo/aomoto-logo-completa.png" alt="Aomoto Imóveis · CRECI J-5624">
+				</a>
+				<p>Compra, venda, locação e avaliação de imóveis em Apucarana e região.</p>
+			</div>
+			<div class="footer-column">
+				<h3>Explore</h3>
+				<nav class="footer-links" aria-label="Navegação do rodapé">
+					<a href="#imoveis">Imóveis</a>
+					<a href="#match">Match por rotina</a>
+					<a href="#bairros">Bairros</a>
+				</nav>
+			</div>
+			<div class="footer-contact">
+				<h3>Vamos conversar?</h3>
+				<p>Conte o que você procura. Nossa equipe ajuda a encontrar o próximo endereço.</p>
+				<a class="footer-cta" href="#contato">
+					Falar com corretor
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+				</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<span>© 2026 Aomoto Imóveis · CRECI-PR 0000/00 · Apucarana, Paraná</span>
+		</div>
+	</div>
+</footer>
+
+<button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+	<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
