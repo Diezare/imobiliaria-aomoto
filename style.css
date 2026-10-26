@@ -496,6 +496,7 @@ input, select, textarea { font-size: 14px; }
 .field-menu li.selected { background: var(--navy); color: white; font-weight: 600; }
 
 .btn-search {
+  height: 62px;
   min-height: 62px;
   padding: 0 26px;
   border-radius: 12px;
